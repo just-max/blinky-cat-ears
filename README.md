@@ -14,6 +14,8 @@ In `src/`:
 
 ## Running
 
+First install necessary dependencies: `jag pkg install` will read `package.yaml` and install to `.packages/`.
+
 To run a program once, use `jag run <path/to/program.toit>`.
 
 Install a program into a persistant "container" to keep it on the device and run it on boot: `jag container install <container-name> <path/to/program.toit>`.
