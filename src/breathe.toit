@@ -25,6 +25,7 @@ breath t/float -> float:
 breathe
     --period/Duration=(Duration --s=5) --delta/Duration=(Duration --ms=10)
     --min-brightness/float=0.05 --max-brightness/float=1.0:
+  // TODO: min/max brightness should be perceptually scaled
   c ::= Counter
   delta.periodic:
     r ::= (c.count.in-ns % period.in-ns).to-float / period.in-ns
